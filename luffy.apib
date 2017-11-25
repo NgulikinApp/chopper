@@ -1,0 +1,30 @@
+FORMAT: 1A
+# Luffy
+
+Mono Repository Project for early build Ngulikin API and Services
+
+# Group Categories
+
+## Fetch Categories [GET /category{?num,cursor}]
+
+Fetch list of categories, ordered by id
+
++ Parameters
+    + cursor (string, optional) - Cursor for pagination
+    + num (integer, optional) - Number of companies to be returned
+        + Default: 10
+
++ Request (application/json)
+
++ Response 200 (application/json)
+    + Attributes (array[Category])
+
+# Data Structures
+
+## Category
++ id: 123 (integer) - ID of the category
++ name: `teknologi` (string) - Name of the category
++ thumbnail_url: `http://thumbnail.com` (string) - category thumbnail url
+
+
+## integer (number)
